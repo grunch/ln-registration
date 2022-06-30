@@ -1,0 +1,22 @@
+.collapse.jumbotron#success-box
+  svg.checkmark(
+    xmlns="http://www.w3.org/2000/svg",
+    viewBox="0 0 52 52"
+  )
+    circle.checkmark__circle(
+      cx="26",
+      cy="26",
+      r="25",
+      fill="none"
+    )
+    path.checkmark__check(
+      fill="none",
+      d="M14.1 27.2l7.1 7.2 16.7-16.8"
+    )
+  p.lead(align="center") ¡Pago realizado correctamente! Gracias 😀
+  p.lead#invoice-description(align="center")
+  p.lead.font-weight-bold(align="center") Presente este QR en la entrada:
+  hr.my-4
+  .preimage-qr-code.mb-3(align="center")
+  .go-home(align="center")
+    a.btn.btn-lg.btn-primary.btn-block(href="/") Regresar al Inicio
